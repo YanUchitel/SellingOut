@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+  background: linear-gradient(180deg, rgb(41, 40, 44) 0%, rgb(70, 66, 77) 50%, rgb(71, 67, 78) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 4fr 2fr 0.5fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main model model"
+    "ds-img ds-img content1"
+    "footer footer footer";
+  grid-gap: 0.2rem;
+
+  color: white;
+  text-align: center;
+  padding: 0%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+.logo-left {
+  grid-area: logo-left;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20em;
+  height: auto;
+  display: block;
+}
+
+.caption {
+  display: block;
+}
+
+.tm{
+  font-size: 60%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+nav {
+  grid-area: nav;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background: #5c0b0e;
+  position: relative;
+}
+
+.nav-logo{
+  width: 300%;
+  height: auto;
+}
+
+
+main {
+  grid-area: main;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+#conten1 {
+  grid-area: content1;
+  border-radius: 5px;
+  padding-top: 5px;
+  margin-right: 25%;
+  z-index: 1;
+}
+
+#features {
+  grid-area: features;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+.ds-img{
+  grid-area: ds-img;
+}
+
+
+footer {
+  grid-area: footer;
+  border-radius: 5px;
+  padding-top: 5px;
+}
+
+a {
+  text-align: center;
+  display: block;
+  font-family: inherit;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 1rem;
+}
+
+.model {
+  position: relative;
+  grid-area: model;
+  /* max-width: 100%;
+  max-height: 100%; */
+  height: 150%;
+}
+
+model-viewer {
+  width: 100%;
+  height: 100%;
+  display: block; 
+}
+
+h1, h2{
+  font-family: 'VT323', monospace;
+  font-weight: normal;
+}
+
+h1 span, h2 span{
+  border-radius: 10px;
+  background: #ED1C24;
+  filter: drop-shadow(0 2px 0.1rem black);
+}
+
+
+@media only screen and (max-width: 550px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
+    grid-template-areas:
+      "nav"
+      "sidebar"
+      "main"
+      "content1"
+      "content2"
+      "content3"
+      "footer";
+  }
+}
