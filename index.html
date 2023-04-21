@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <script src="./scripts/script.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <script
+      type="module"
+      src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
+    ></script>
+
+    <!-- including the header from a seperate file -->
+    <div w3-include-html="./include/header.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
+  </head>
+
+  <body>
+    <div id="main-content" w3-include-html="./home.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
+  </body>
+
+  <footer>
+    <div w3-include-html="./include/footer.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
+  </footer>
+</html>
