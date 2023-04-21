@@ -2,101 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="CSS/style.css" />
+    <script src="./scripts/script.js"></script>
+    <script src="http://www.w3schools.com/lib/w3data.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <script
       type="module"
       src="https://ajax.googleapis.com/ajax/libs/model-viewer/3.0.1/model-viewer.min.js"
     ></script>
+
+    <!-- including the header from a seperate file -->
+    <div w3-include-html="./include/header.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
   </head>
 
   <body>
-    <div class="container">
-      <nav>
-        <figure class="logo-left">
-          <img class="logo" src="images/Nintendo.svg" alt="Nintendo Logo" />
-        </figure>
-        <a href="index.html">
-          <img class="nav-logo" src="images/home.svg" alt="Home" />
-        </a>
-        <a href="about.html">
-          <img class="nav-logo" src="images/about.svg" alt="About" />
-        </a>
-        <a href="product.html">
-          <img class="nav-logo" src="images/product.svg" alt="Product" />
-        </a>
-        <a href="contact.html">
-          <img class="nav-logo" src="images/contact.svg" alt="Contact" />
-        </a>
-        <div class="tm">Nintendo of America tm</div>
-        <div class="mega-menu">
-          <!-- Mega menu content here -->
-        </div>
-      </nav>
-      <main>
-        <h1><span>‎ Nintendo DS ‎</span></h1>
-        <p>
-          The Nintendo DS is a handheld game console developed and produced by
-          Nintendo. It was released in 2004 and was the first console in the
-          Nintendo DS line. The Nintendo DS features a clamshell design with two
-          screens, one of which is a touchscreen. The console also features
-          wireless connectivity, allowing players to connect and play with each
-          other over a local network.
-        </p>
-      </main>
-      <div class="model">
-        <model-viewer
-          src="./models/nintendo_ds_lite.glb"
-          alt="Nintendo DS"
-          ar
-          ar-modes="webxr scene-viewer quick-look"
-          camera-controls
-          shadow-intensity="1"
-          auto-rotate
-        >
-        </model-viewer>
-        <!-- <p>Click and drag to rotate</p> -->
-      </div>
-      <img
-        class="ds-img"
-        src="./images/Nintendo_DS.svg"
-        alt="Image of nintendo ds"
-      />
-      <div id="conten1">
-        <h2><span>‎ Games ‎</span></h2>
-        <p>
-          The Nintendo DS has an extensive library of games, with titles from
-          many different genres. Some of the most popular games for the console
-          include:
-        </p>
-        <ul>
-          <li>Animal Crossing: Wild World</li>
-          <li>Mario Kart DS</li>
-          <li>The Legend of Zelda: Phantom Hourglass</li>
-          <li>New Super Mario Bros.</li>
-          <li>Pokemon Diamond and Pearl</li>
-        </ul>
-        <h2><span>‎ Features ‎</span></h2>
-        <ul>
-          <li>Two screens, one of which is a touchscreen</li>
-          <li>Wireless connectivity</li>
-          <li>Backward compatibility with Game Boy Advance games</li>
-          <li>
-            Ability to download and play classic games from previous Nintendo
-            consoles via the Virtual Console service
-          </li>
-        </ul>
-      </div>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-left">
-            <p>&copy; 2023 Nintendo of America Inc. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+    <div id="main-content" w3-include-html="./home.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
   </body>
+
+  <footer>
+    <div w3-include-html="./include/footer.html"></div>
+    <script>
+      w3IncludeHTML();
+    </script>
+  </footer>
 </html>

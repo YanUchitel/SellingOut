@@ -1,89 +1,118 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Inter:400,800,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" type="text/css" href="CSS/product.css" />
-  </head>
+<div class="product-container">
+  <div class="product-image">
+    <img id="product-img" src="./images/DS0.jpg" alt="Nintendo DS Features" />
+    <a class="prev" onclick="chimg(-1)">&#10094;</a>
+    <a class="next" onclick="chimg(1)">&#10095;</a>
+  </div>
+  <model-viewer
+    class="model"
+    src="models/nintendo_ds_lite.glb"
+    ar
+    ar-modes="webxr scene-viewer quick-look"
+    camera-controls
+    poster="poster.webp"
+    shadow-intensity="1"
+    auto-rotate
+  >
+  </model-viewer>
 
-  <body>
-    <div class="container">
-      <nav>
-        <figure class="logo-left">
-          <img class="logo" src="images/Nintendo.svg" alt="Nintendo Logo" />
-        </figure>
-        <a href="index.html">
-          <img class="nav-logo" src="images/home.svg" alt="Home" />
-        </a>
-        <a href="about.html">
-          <img class="nav-logo" src="images/about.svg" alt="About" />
-        </a>
-        <a href="product.html">
-          <img class="nav-logo" src="images/product.svg" alt="Product" />
-        </a>
-        <a href="contact.html">
-          <img class="nav-logo" src="images/contact.svg" alt="Contact" />
-        </a>
-        <div class="tm">Nintendo of America tm</div>
-        <div class="mega-menu">
-          <!-- Mega menu content here -->
-        </div>
-      </nav>
-      <main>
-        <h1>Product</h1>
-        <img src="./images/Nintendo-DS-Dimensions.svg" alt="nintendo ds schematics">
-        <div id="content1">
-          <h2><span>‎ Accessories ‎</span></h2>
-          <p>
-            There are a variety of accessories available for the Nintendo DS,
-            including:
-          </p>
-          <ul>
-            <li>Carrying cases</li>
-            <li>Chargers</li>
-            <li>Stylus pens</li>
-            <li>Headphones</li>
-            <li>Screen protectors</li>
-          </ul>
-        </div>
-        <div id="content2">
-          <h2><span>‎ Games and features ‎</span></h2>
-          <p>
-            The Nintendo DS has a huge library of games, ranging from classic
-            franchises like Super Mario Bros. and The Legend of Zelda to new and
-            innovative titles that take advantage of the console's unique
-            features.
-          </p>
-          <p>
-            One of the most popular features of the Nintendo DS is its dual
-            screens. The bottom screen is a touch screen, which opens up new
-            gameplay possibilities in many games. For example, in the game Brain
-            Age, players use the touch screen to solve puzzles and complete
-            exercises designed to improve cognitive function.
-          </p>
-          <p>
-            Another popular feature is the console's built-in microphone. Many
-            games use this to great effect, such as Nintendogs, a virtual pet
-            simulator in which players use the microphone to speak commands to
-            their dogs.
-          </p>
-          <p>
-            Overall, the Nintendo DS is a versatile and innovative handheld
-            console with a wide range of games and features to suit all kinds of
-            players.
-          </p>
-        </div>
-      </main>
-      <footer>
-        <div class="footer-container">
-          <div class="footer-left">
-            <p>&copy; 2023 Nintendo of America Inc. All Rights Reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  </body>
-</html>
+  <h1 class="product-name">Nintendo DS</h1>
+  <h3 class="price">$89.99 CAD</h3>
+  <p class="product-description">
+    The Nintendo DS is a dual-screen handheld game console developed and
+    released by Nintendo. The device went on sale in North America on November
+    21, 2004. The DS, short for "Developers' System" or "Dual Screen",
+    introduced distinctive new features to handheld gaming: an LCD screen
+    working in tandem with a touchscreen, a built-in microphone, and support for
+    wireless connectivity. Both screens are encompassed within a clamshell
+    design similar to the Game Boy Advance SP. The Nintendo DS also features the
+    ability for multiple DS consoles to directly interact with each other over
+    Wi-Fi within a short range without the need to connect to an existing
+    wireless network. Alternatively, they could interact online using the
+    now-discontinued Nintendo Wi-Fi Connection service. Prior to its release,
+    the Nintendo DS was marketed as a "third pillar" in Nintendo's console
+    lineup, meant to complement the Game Boy Advance and GameCube. However,
+    backward compatibility with Game Boy Advance titles and strong sales
+    ultimately established the new handheld console as the successor to the Game
+    Boy series.
+  </p>
+  <table class="specs">
+    <tr>
+      <th>Mass</th>
+      <td>275g</td>
+    </tr>
+    <tr>
+      <th>Dimensions</th>
+      <td>When closed: 148.7mm x 84.7mm x 28.9mm (width x height x depth)</td>
+    </tr>
+    <tr>
+      <th>Display</th>
+      <td>
+        Two TFT LCD screens: 62 mm × 46mm, 77mm diagonal, 0.24mm dot pitch,
+        18-bit depth (262,144 colors), 21mm gap between screens (≈92 lines)
+      </td>
+    </tr>
+    <tr>
+      <th>Resolution</th>
+      <td>256 × 192 pixels (4:3 aspect ratio) for each screen</td>
+    </tr>
+    <tr>
+      <th>Audio</th>
+      <td>
+        Stereo with 16 PCM/ADPCM channels, facilitated by the Mitsumi MM3205B
+      </td>
+    </tr>
+    <tr>
+      <th>CPU</th>
+      <td>
+        Two ARM processors:
+        <ul>
+          <li>
+            32 bit ARM946E-S main CPU; 67 MHz clock speed. Processes gameplay
+            mechanisms and video rendering
+          </li>
+          <li>
+            32 bit ARM7TDMI coprocessor; 33 MHz clock speed. Processes sound
+            output, Wi-Fi support and takes on second-processor duties in Game
+            Boy Advance mode
+          </li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>RAM</th>
+      <td>4 MB PSRAM</td>
+    </tr>
+    <tr>
+      <th>Input</th>
+      <td>
+        <ul>
+          <li>Power button</li>
+          <li>Volume slider</li>
+          <li>Eight digital buttons (A, B, X, Y, L, R, Start, Select)</li>
+          <li>D-pad</li>
+          <li>Resistive touchscreen (lower screen only)</li>
+          <li>Microphone</li>
+        </ul>
+      </td>
+    </tr>
+    <tr>
+      <th>Voltage</th>
+      <td>1.65 v</td>
+    </tr>
+    <tr>
+      <th>Battery</th>
+      <td>Rechargeable 850 mAh lithium-ion battery</td>
+    </tr>
+    <tr>
+      <th>Storage</th>
+      <td>256 kB of serial flash memory</td>
+    </tr>
+    <tr>
+      <th>Wireless connectivity</th>
+      <td>Built-in 802.11 wireless network connection</td>
+    </tr>
+  </table>
+  <div class="empty"></div>
+  <input class="buy-button" type="submit" value="Buy Now" />
+</div>

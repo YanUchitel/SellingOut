@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+
+body {
+  font-family: "Inter", sans-serif;
+
+  background: linear-gradient(180deg, rgb(41, 40, 44) 0%, rgb(70, 66, 77) 50%, rgb(71, 67, 78) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+
+}
+
+.container {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.2fr 2fr 2fr 0.5fr;
+  grid-template-areas:
+    "nav nav nav"
+    "main main main"
+    "footer footer footer";
+  grid-gap: 0.2rem;
+
+  color: white;
+  text-align: center;
+  padding: 0%;
+  margin-left: 15%;
+  margin-right: 15%;
+}
+
+main {
+    grid-area: main;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+
+input, textarea {
+  width: 400px;
+  padding: 12px;
+  margin-top: 2%;
+  border-radius: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  width: 200px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: lightgray;
+  box-shadow: 0 0 4px 0 rgba(0, 0, 0, 0.7);
+}
+
+  
+footer {
+    grid-area: footer;
+    border-radius: 5px;
+    padding-top: 5px;
+}
+.tm{
+    font-size: 60%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+  
+nav {
+    grid-area: nav;
+    border-radius: 5px;
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background: #5c0b0e;
+    position: relative;
+}
+
+.nav-logo{
+    width: 300%;
+    height: auto;
+}
+
+.logo-left {
+  grid-area: logo-left;
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 20em;
+  height: auto;
+  display: block;
+}
